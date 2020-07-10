@@ -1,0 +1,103 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Manager_Geral.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+
+[node name="Interface" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_top = 0.853333
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not. It’s not a story the Jedi would tell you. It’s a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life… He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful… the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. Ironic. He could save others from death, but not himself."
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureProgress" type="TextureProgress" parent="."]
+anchor_left = 0.0078125
+anchor_top = 0.535
+anchor_right = 0.0390625
+anchor_bottom = 0.535
+margin_top = 183.0
+margin_right = 151.0
+margin_bottom = 215.0
+rect_rotation = -90.0
+value = 75.0
+texture_progress = ExtResource( 2 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureProgress2" type="TextureProgress" parent="."]
+anchor_left = 0.0625
+anchor_top = 0.535
+anchor_right = 0.0927734
+anchor_bottom = 0.535
+margin_top = 183.0
+margin_right = 152.0
+margin_bottom = 214.0
+rect_rotation = -90.0
+value = 95.0
+texture_progress = ExtResource( 2 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+anchor_left = 0.867188
+anchor_top = 0.64
+anchor_right = 0.984375
+anchor_bottom = 0.826667
+texture_normal = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+anchor_left = 0.875
+anchor_top = 0.546667
+anchor_right = 0.914062
+anchor_bottom = 0.613333
+texture_normal = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_left = 0.9375
+anchor_top = 0.546667
+anchor_right = 0.976562
+anchor_bottom = 0.613333
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="ColorRect"]
+margin_right = 40.0
+margin_bottom = 40.0
+text = "69"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
