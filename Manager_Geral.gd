@@ -5,8 +5,8 @@ signal button2
 signal button3
 signal button4
 signal button5
+var button_pressed = ""
 
-var inputado = false
 
 var eventos = [{
 	"Evento" : "Um maluco na sua frente ta moscando no celular e segurando a fila, o que fazes?\n1 - Passa na frente do moscão\n2 - Faz nada\n3 - Avisa o djow"
@@ -16,17 +16,29 @@ var eventos = [{
 }]
 
 
-
+func _input(event):
+	if Input.is_action_pressed("option_1"):
+		button_pressed = "1"
+		emit_signal("button1")
+	if Input.is_action_pressed("option_2"):
+		button_pressed = "2"
+		emit_signal("button1")
+	if Input.is_action_pressed("option_3"):
+		button_pressed = "3"
+		emit_signal("button1")
+	if Input.is_action_pressed("option_4"):
+		button_pressed = "4"
+		emit_signal("button1")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
 	
 
 func Barra_de_Fome(modificador):
-	get_node("BarraDeFome").value = modificador
+	get_node("BarraDeFome").value += modificador
 
 func Barra_de_Moral(modificador):
-	get_node("BarraDeMoral").value = modificador
+	get_node("BarraDeMoral").value += modificador
 	
 	
 func Setup():
@@ -42,29 +54,27 @@ func _on_BotaoReset_pressed():
 	
 func evento_modelo():
 	get_node("PanelDialogo/DialogoText").text = ""
-	if Input.is_action_pressed("option_1"):
+	yield(self, "button1")
+	if button_pressed == "1":
 		get_node("PanelDialogo/DialogoText").text = ""
 		$BarraDeFome.value += 0
 		$BarraDeMoral.value += 0
-	if Input.is_action_pressed("option_2"):
+	if button_pressed == "2":
 		get_node("PanelDialogo/DialogoText").text = ""
 		$BarraDeFome.value += 0
 		$BarraDeMoral.value += 0
-	if Input.is_action_pressed("option_3"):
+	if button_pressed == "3":
 		get_node("PanelDialogo/DialogoText").text = ""
 		$BarraDeFome.value += 0
 		$BarraDeMoral.value += 0
-	if Input.is_action_pressed("option_4"):
-		get_node("PanelDialogo/DialogoText").text = ""
-		$BarraDeFome.value += 0
-		$BarraDeMoral.value += 0
-	if Input.is_action_pressed("option_5"):
+	if button_pressed == "4":
 		get_node("PanelDialogo/DialogoText").text = ""
 		$BarraDeFome.value += 0
 		$BarraDeMoral.value += 0
 
 func evento0():
 	get_node("PanelDialogo/DialogoText").text = eventos[0].Evento
+	yield(self, "button1")
 	if Input.is_action_pressed("option_1"):
 		get_node("PanelDialogo/DialogoText").text = "Vc passa na frente do tio >:c"
 		$BarraDeFome.value += 10
@@ -81,21 +91,23 @@ func evento0():
 	
 func evento1():
 	get_node("PanelDialogo/DialogoText").text = eventos[1].Evento
-	if Input.is_action_pressed("option_1"):
+	yield(self, "button1")
+	print(button_pressed)
+	if button_pressed == "1":
 		get_node("PanelDialogo/DialogoText").text = "Vc detona o cara"
 		$BarraDeFome.value += 0
 		$BarraDeMoral.value += 0
 		
-	if Input.is_action_pressed("option_2"):
+	if button_pressed == "2":
 		get_node("PanelDialogo/DialogoText").text = "RIP MRS. OBAMA"
 		$BarraDeFome.value += 0
 		$BarraDeMoral.value += 0
 		
-	if Input.is_action_pressed("option_3"):
+	if button_pressed == "3":
 		get_node("PanelDialogo/DialogoText").text = "VC FALHOU EM CONSEGUIR O PASSE"
 		$BarraDeFome.value += 0
 		$BarraDeMoral.value += 0
-		
+			
 	
 		
 func _on_BotaoReset2_pressed():
