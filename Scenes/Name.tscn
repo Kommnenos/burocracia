@@ -1,0 +1,111 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Assets/Sprites_UI/Kenney Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/Sprites_Jogador/RG2_03.png" type="Texture" id=2]
+[ext_resource path="res://LineEdit.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Sprites_UI/icone-de-iniciacao_03.png" type="Texture" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=1]
+resource_local_to_scene = true
+size = 42
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 32
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 0.166667
+anchor_top = 0.207407
+anchor_right = 0.596354
+anchor_bottom = 0.742593
+margin_top = 1.52588e-05
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="LineEdit" type="LineEdit" parent="."]
+anchor_left = 0.249152
+anchor_top = 0.308094
+anchor_right = 0.415818
+anchor_bottom = 0.367354
+custom_styles/focus = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+custom_fonts/font = SubResource( 2 )
+custom_colors/cursor_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+caret_blink = true
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Pergunta" type="Label" parent="."]
+anchor_left = 0.2
+anchor_top = 0.17037
+anchor_right = 0.783333
+anchor_bottom = 0.22963
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "What is your full name? "
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.271464
+anchor_top = 0.382672
+anchor_right = 0.331464
+anchor_bottom = 0.409339
+margin_right = -19.2
+margin_bottom = -4.79999
+rect_scale = Vector2( 1.2, 1.2 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+visible = false
+margin_left = 474.019
+margin_top = 771.988
+margin_right = 1006.02
+margin_bottom = 898.988
+texture_normal = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="TextureButton"]
+margin_left = 184.0
+margin_top = 40.0
+margin_right = 344.0
+margin_bottom = 88.0
+custom_fonts/font = SubResource( 6 )
+text = "Enter"

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/click5_online-audio-converter.com.wav-4369bc78734f6747341fb41739598dd1.sample"
+
+[deps]
+
+source_file="res://Assets/audio/click5_online-audio-converter.com.wav"
+dest_files=[ "res://.import/click5_online-audio-converter.com.wav-4369bc78734f6747341fb41739598dd1.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

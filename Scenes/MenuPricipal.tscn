@@ -1,0 +1,170 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Sprites_UI/iniciar_antes.jpg" type="Texture" id=1]
+[ext_resource path="res://Assets/Sprites_UI/icone-de-iniciacao_03.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/MenuPricipal.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Sprites_UI/Kenney Bold.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Scenes/BotaoAudio.tscn" type="PackedScene" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 70
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 4 )
+
+[node name="MenuPricipal" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play" type="TextureButton" parent="."]
+anchor_left = 0.24179
+anchor_top = 0.0716163
+anchor_right = 0.761321
+anchor_bottom = 0.283283
+texture_normal = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Play"]
+anchor_left = 0.259986
+anchor_top = 0.231105
+anchor_right = 0.742191
+anchor_bottom = 0.799784
+margin_top = 3.8147e-06
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_fonts/font = SubResource( 1 )
+text = "Play"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="BotaoAudio" parent="Play" instance=ExtResource( 5 )]
+
+[node name="Play2" type="TextureButton" parent="."]
+anchor_left = 0.24179
+anchor_top = 0.283283
+anchor_right = 0.761321
+anchor_bottom = 0.49495
+texture_normal = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Play2"]
+anchor_left = 0.109273
+anchor_top = 0.231846
+anchor_right = 0.878195
+anchor_bottom = 0.800525
+margin_top = 3.8147e-06
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_fonts/font = SubResource( 1 )
+text = "How to Play"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="BotaoAudio" parent="Play2" instance=ExtResource( 5 )]
+
+[node name="Play3" type="TextureButton" parent="."]
+anchor_left = 0.24179
+anchor_top = 0.49495
+anchor_right = 0.761321
+anchor_bottom = 0.706616
+texture_normal = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="Play3"]
+anchor_left = 0.109273
+anchor_top = 1.22886
+anchor_right = 0.878195
+anchor_bottom = 1.79754
+margin_top = -228.6
+margin_right = 6.10352e-05
+margin_bottom = -228.6
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_fonts/font = SubResource( 1 )
+text = "Credits"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="BotaoAudio" parent="Play3" instance=ExtResource( 5 )]
+
+[node name="Play4" type="TextureButton" parent="."]
+anchor_left = 0.24179
+anchor_top = 0.706616
+anchor_right = 0.761321
+anchor_bottom = 0.918283
+texture_normal = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="Play4"]
+anchor_left = 0.109273
+anchor_top = 1.22886
+anchor_right = 0.878195
+anchor_bottom = 1.79754
+margin_top = -228.6
+margin_right = 6.10352e-05
+margin_bottom = -228.6
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_fonts/font = SubResource( 1 )
+text = "Exit"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="BotaoAudio" parent="Play4" instance=ExtResource( 5 )]
+[connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="Play2" to="." method="_on_Play2_pressed"]
+[connection signal="pressed" from="Play3" to="." method="_on_Play3_pressed"]
+[connection signal="pressed" from="Play4" to="." method="_on_Play4_pressed"]

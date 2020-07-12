@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/PAPEL.wav-d34c8de58553a4d3f5e9f5dbe2b74cee.sample"
+
+[deps]
+
+source_file="res://Assets/audio/PAPEL.wav"
+dest_files=[ "res://.import/PAPEL.wav-d34c8de58553a4d3f5e9f5dbe2b74cee.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

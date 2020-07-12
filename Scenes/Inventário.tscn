@@ -1,0 +1,251 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Assets/Sprites_UI/Fundo-inventario_03.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Sprites_UI/folha.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Sprites_UI/SETA2.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Sprites_UI/SETA.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Sprites_UI/CPF2_03.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Sprites_UI/Kenney Bold.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://Assets/Sprites_UI/carteira_de_vacinacao2_03.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Sprites_UI/jojo_3_03.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/Inventário.gd" type="Script" id=9]
+[ext_resource path="res://Assets/audio/PAPEL.wav" type="AudioStream" id=10]
+[ext_resource path="res://Assets/Sprites_Jogador/RG2_06.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Sprites_Jogador/Reserva_natural_2_03.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Sprites_Jogador/RG2_03.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Sprites_Jogador/Reserva_natural_2_06.png" type="Texture" id=14]
+
+[sub_resource type="DynamicFont" id=1]
+size = 10
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 6 )
+
+[node name="Inventário" type="Node2D"]
+script = ExtResource( 9 )
+
+[node name="Capa" type="TextureRect" parent="."]
+margin_left = 336.0
+margin_top = 40.0
+margin_right = 685.0
+margin_bottom = 566.0
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Folha" type="TextureRect" parent="Capa"]
+margin_top = 10.4435
+margin_right = 348.0
+margin_bottom = 531.444
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EsquerdaSeta" type="TextureButton" parent="."]
+margin_left = 200.0
+margin_top = 280.0
+margin_right = 339.0
+margin_bottom = 359.0
+texture_normal = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DireitaSeta" type="TextureButton" parent="."]
+margin_left = 680.0
+margin_top = 280.0
+margin_right = 820.0
+margin_bottom = 370.0
+texture_normal = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CPF" type="TextureRect" parent="."]
+margin_left = 304.0
+margin_top = 232.0
+margin_right = 711.0
+margin_bottom = 424.0
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="CPFNome" type="Label" parent="CPF"]
+anchor_left = 0.0648254
+anchor_top = 0.619679
+anchor_right = 0.606545
+anchor_bottom = 0.692595
+margin_right = -8.48001
+rect_scale = Vector2( 1.04, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Sua Mae aquela prostitua vesga"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="CPFNum" type="Label" parent="CPF"]
+anchor_left = 0.0631518
+anchor_top = 0.463655
+anchor_right = 0.604872
+anchor_bottom = 0.536571
+margin_left = 1.90735e-06
+margin_right = -8.48
+rect_scale = Vector2( 1.04, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "69420"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="CarteiraVac" type="TextureRect" parent="."]
+visible = false
+margin_left = 310.396
+margin_top = 113.955
+margin_right = 703.396
+margin_bottom = 506.955
+texture = ExtResource( 7 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="CertNasc" type="TextureRect" parent="."]
+visible = false
+margin_left = 323.0
+margin_top = 40.0
+margin_right = 697.0
+margin_bottom = 582.0
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="CartNascNom" type="Label" parent="CertNasc"]
+anchor_left = 0.130979
+anchor_top = 0.1959
+anchor_right = 0.720497
+anchor_bottom = 0.22542
+margin_top = -7.62939e-06
+margin_right = -8.47998
+rect_scale = Vector2( 1.04, 1 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Sua Mae aquela prostitua vesga"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Folheando" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+
+[node name="RGFrente" type="TextureRect" parent="."]
+visible = false
+margin_left = 336.0
+margin_top = 547.151
+margin_right = 1113.0
+margin_bottom = 1116.15
+rect_rotation = -90.0
+rect_scale = Vector2( 0.600001, 0.600001 )
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RGVerso" type="TextureRect" parent="."]
+visible = false
+margin_left = 336.0
+margin_top = 547.151
+margin_right = 1113.0
+margin_bottom = 1116.15
+rect_rotation = -90.0
+rect_scale = Vector2( 0.600001, 0.600001 )
+texture = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RGNom" type="Label" parent="RGVerso"]
+anchor_left = -0.467751
+anchor_top = 0.315853
+anchor_right = 0.121767
+anchor_bottom = 0.345374
+margin_left = 560.23
+margin_top = -53.2534
+margin_right = 772.23
+margin_bottom = -41.2534
+rect_scale = Vector2( 1.04, 1 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Sua Mae aquela prostitua vesga"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="RGNum" type="Label" parent="RGVerso"]
+anchor_left = -0.429342
+anchor_top = 0.435807
+anchor_right = 0.160176
+anchor_bottom = 0.465327
+margin_left = 560.23
+margin_top = -53.2534
+margin_right = 772.23
+margin_bottom = -41.2534
+rect_scale = Vector2( 1.04, 1 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "69420"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ReserFren" type="TextureRect" parent="."]
+visible = false
+margin_left = 288.0
+margin_top = 96.0
+margin_right = 328.0
+margin_bottom = 136.0
+rect_scale = Vector2( 11.36, 11.36 )
+texture = ExtResource( 12 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReserNum" type="Label" parent="ReserFren"]
+anchor_left = -0.628187
+anchor_top = 0.234775
+anchor_right = -0.0386681
+anchor_bottom = 0.264295
+margin_left = 29.7652
+margin_top = 17.872
+margin_right = 275.184
+margin_bottom = 32.6912
+rect_scale = Vector2( 0.150141, 0.144366 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "69420"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ReserVer" type="TextureRect" parent="."]
+visible = false
+margin_left = 288.0
+margin_top = 96.0
+margin_right = 328.0
+margin_bottom = 136.0
+rect_scale = Vector2( 11.36, 11.36 )
+texture = ExtResource( 14 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="EsquerdaSeta" to="." method="_on_EsquerdaSeta_pressed"]
+[connection signal="pressed" from="DireitaSeta" to="." method="_on_DireitaSeta_pressed"]
