@@ -1,6 +1,10 @@
 res://default_env.tres
 res://Scenes/CenaInicial.tscn
-res://Scenes/Name.tscn
-res://Scenes/MenuPricipal.tscn
+res://Scenes/CenaFinal.tscn
+res://Scenes/CenaFinalDerrota.tscn
+res://Scenes/PopUpFome.tscn
 res://Scenes/Inventário.tscn
-res://Scenes/Creditos.tscn
+res://Scenes/Inventário.gd
+res://Scenes/How to Play.tscn
+res://Scenes/How to Play.gd
+res://Scripts/Manager_Geral.gd

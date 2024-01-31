@@ -1,46 +1,93 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=8 format=3 uid="uid://b1s7wvpfpuhmw"]
 
-[ext_resource path="res://Assets/Sprites_UI/iniciar_depois.jpg" type="Texture2D" id=1]
-[ext_resource path="res://Assets/Sprites_UI/Kenney Bold.ttf" type="FontFile" id=2]
-[ext_resource path="res://Assets/Sprites_UI/icone-de-iniciacao_03.png" type="Texture2D" id=3]
-[ext_resource path="res://Scenes/How to Play.gd" type="Script" id=4]
-[ext_resource path="res://Scenes/BotaoAudio.tscn" type="PackedScene" id=5]
+[ext_resource type="Texture2D" uid="uid://djpcfj1uqgkjv" path="res://Assets/Sprites_UI/iniciar_depois.jpg" id="1"]
+[ext_resource type="FontFile" uid="uid://kl4wdhepfkym" path="res://Assets/Sprites_UI/Kenney Bold.ttf" id="2"]
+[ext_resource type="Texture2D" uid="uid://c3ptfi4p0x5wj" path="res://Assets/Sprites_UI/icone-de-iniciacao_03.png" id="3"]
+[ext_resource type="Script" path="res://Scenes/How to Play.gd" id="4"]
+[ext_resource type="PackedScene" path="res://Scenes/BotaoAudio.tscn" id="5"]
 
-[sub_resource type="FontFile" id=1]
-size = 40
-outline_color = Color( 0, 0, 0, 1 )
-use_mipmaps = true
-use_filter = true
-font_data = ExtResource( 2 )
+[sub_resource type="FontFile" id="2"]
+fallbacks = Array[Font]([ExtResource("2")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
-[sub_resource type="FontFile" id=2]
-size = 40
-font_data = ExtResource( 2 )
+[sub_resource type="FontFile" id="1"]
+fallbacks = Array[Font]([ExtResource("2")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/glyphs/0/advance = Vector2(0, 0)
+cache/0/16/0/glyphs/0/offset = Vector2(0, 0)
+cache/0/16/0/glyphs/0/size = Vector2(0, 0)
+cache/0/16/0/glyphs/0/uv_rect = Rect2(0, 0, 0, 0)
+cache/0/16/0/glyphs/0/texture_idx = -1
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
 [node name="How to Play" type="Control"]
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+script = ExtResource("4")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="TextureRect"]
-modulate = Color( 0, 0, 0, 1 )
+layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 40.0
-offset_right = -40.0
-offset_bottom = -12.0
-theme_override_fonts/font = SubResource( 1 )
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1")
+
+[node name="VolaterHTP" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -532.0
+offset_top = -127.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("3")
+
+[node name="Label" type="Label" parent="VolaterHTP"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -12.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("2")
+text = "Next"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoAudio" parent="VolaterHTP" instance=ExtResource("5")]
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 17.0
+offset_right = 16.0
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("1")
 text = "Burocracia is a game about the ever growing, out of control bureaucratic machine. All that is standing between
 you and your dream vacation is a huge line at the Federal Passport Agency.
 
@@ -49,55 +96,28 @@ You can choose your course of action by clicking the number in your keyboard tha
 
 Keep an eye out for your tiredness and hunger bar too. When your hunger bar reaches 0 you go back to the end of the line.
 "
-align = 1
-autowrap = true
-__meta__ = {
-"_edit_use_anchors_": true
-}
+autowrap_mode = 3
 
-[node name="Label2" type="Label" parent="TextureRect"]
+[node name="Label2" type="Label" parent="."]
 visible = false
-modulate = Color( 0, 0, 0, 1 )
+modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 40.0
-offset_right = -40.0
-offset_bottom = -12.0
-theme_override_fonts/font = SubResource( 1 )
+offset_left = 24.0
+offset_top = 25.0
+offset_right = 24.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("1")
 text = "Tiredness affects the chance of better outcomes in random events.
 
 When at the countertop, you have to type the correct info. When asked to type a date, make sure you use the DD/MM/YYYY format.
 You can view your documents by clicking at the binder on the  right.
 
 Good luck, and have fun!"
-align = 1
-autowrap = true
-__meta__ = {
-"_edit_use_anchors_": true
-}
+autowrap_mode = 3
 
-[node name="VolaterHTP" type="TextureButton" parent="."]
-anchor_left = 0.716667
-anchor_top = 0.866667
-anchor_right = 0.99375
-anchor_bottom = 0.984259
-texture_normal = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": true
-}
-
-[node name="Label" type="Label" parent="VolaterHTP"]
-anchor_left = 0.225564
-anchor_top = 0.188976
-anchor_right = 0.781955
-anchor_bottom = 0.818898
-theme_override_fonts/font = SubResource( 2 )
-text = "Next"
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": true
-}
-
-[node name="BotaoAudio" parent="VolaterHTP" instance=ExtResource( 5 )]
 [connection signal="pressed" from="VolaterHTP" to="." method="_on_VolaterHTP_pressed"]

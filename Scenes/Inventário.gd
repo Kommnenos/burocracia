@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 @onready var CPF = $CPF
 @onready var CarteiraVac = $CarteiraVac
 @onready var CertNasc = $CertNasc

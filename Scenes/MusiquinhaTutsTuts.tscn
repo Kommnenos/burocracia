@@ -1,10 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=3 format=3 uid="uid://dhn3awaw4urnr"]
 
-[ext_resource path="res://Scripts/AudioStreamPlayer.gd" type="Script" id=1]
-[ext_resource path="res://Assets/audio/Mela_-_03_-_Horrible (online-audio-converter.com).wav" type="AudioStream" id=2]
+[ext_resource type="Script" path="res://Scripts/AudioStreamPlayer.gd" id="1"]
+[ext_resource type="AudioStream" uid="uid://dglqnpooteos8" path="res://Assets/audio/Mela_-_03_-_Horrible (online-audio-converter.com).wav" id="2"]
 
 [node name="MusiquinhaTutsTuts" type="AudioStreamPlayer"]
-stream = ExtResource( 2 )
+stream = ExtResource("2")
 volume_db = -25.0
-autoplay = true
-script = ExtResource( 1 )
+script = ExtResource("1")

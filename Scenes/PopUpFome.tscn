@@ -1,67 +1,91 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=6 format=3 uid="uid://dauyua33hdf7i"]
 
-[ext_resource path="res://Assets/Sprites_UI/Kenney Bold.ttf" type="FontFile" id=1]
-[ext_resource path="res://Assets/Sprites_UI/Fundo-inventario_03.png" type="Texture2D" id=2]
-[ext_resource path="res://Assets/Sprites_UI/icone-de-iniciacao_03.png" type="Texture2D" id=3]
+[ext_resource type="FontFile" uid="uid://kl4wdhepfkym" path="res://Assets/Sprites_UI/Kenney Bold.ttf" id="1"]
+[ext_resource type="Texture2D" uid="uid://bfq1c7ptq3mwf" path="res://Assets/Sprites_UI/Fundo-inventario_03.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://c3ptfi4p0x5wj" path="res://Assets/Sprites_UI/icone-de-iniciacao_03.png" id="3"]
 
-[sub_resource type="FontFile" id=1]
-size = 28
-use_mipmaps = true
-use_filter = true
-font_data = ExtResource( 1 )
+[sub_resource type="FontFile" id="1"]
+fallbacks = Array[Font]([ExtResource("1"), ExtResource("1")])
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
-[sub_resource type="FontFile" id=2]
-size = 40
-font_data = ExtResource( 1 )
+[sub_resource type="FontFile" id="2"]
+fallbacks = Array[Font]([ExtResource("1"), ExtResource("1")])
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
 [node name="PopUpFome" type="Control"]
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
 anchor_left = 0.370833
 anchor_top = 0.0592593
 anchor_right = 0.660937
 anchor_bottom = 0.836111
-texture = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": true
-}
+offset_left = -41.5579
+offset_top = -73.5111
+offset_right = 119.16
+offset_bottom = 168.867
+texture = ExtResource("2")
 
 [node name="Label" type="Label" parent="TextureRect"]
-anchor_left = 0.0287253
-anchor_top = 0.0381406
-anchor_right = 0.976661
-anchor_bottom = 0.972586
-theme_override_fonts/font = SubResource( 1 )
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0133611
+anchor_top = 0.0446828
+anchor_right = 1.00079
+anchor_bottom = 1.02323
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("1")
 text = "Oh no! You got so hungry you had to go to the snack machine, you end up losing your spot on the line and have to start over..."
-autowrap = true
-__meta__ = {
-"_edit_use_anchors_": true
-}
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureButton" type="TextureButton" parent="TextureRect"]
-offset_left = 8.0
-offset_top = 688.0
-offset_right = 540.0
-offset_bottom = 815.0
-texture_normal = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -266.0
+offset_top = -127.0
+offset_right = 266.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("3")
 
 [node name="Label" type="Label" parent="TextureRect/TextureButton"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
 anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 224.0
-offset_top = 32.0
-offset_right = -228.0
-offset_bottom = -35.0
-theme_override_fonts/font = SubResource( 2 )
+anchor_bottom = 0.5
+offset_top = -12.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("2")
 text = "OK"
-__meta__ = {
-"_edit_use_anchors_": false
-}
+horizontal_alignment = 1
+vertical_alignment = 1

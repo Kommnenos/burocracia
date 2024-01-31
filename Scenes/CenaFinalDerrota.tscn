@@ -1,72 +1,80 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=7 format=3 uid="uid://6wcmfwafywm"]
 
-[ext_resource path="res://Assets/Sprites_UI/Kenney Bold.ttf" type="FontFile" id=1]
-[ext_resource path="res://Assets/Sprites_UI/iniciar_depois.jpg" type="Texture2D" id=2]
-[ext_resource path="res://Assets/Sprites_UI/icone-de-iniciacao_03.png" type="Texture2D" id=3]
-[ext_resource path="res://Scenes/CenaFinalDerrota.gd" type="Script" id=4]
+[ext_resource type="FontFile" uid="uid://kl4wdhepfkym" path="res://Assets/Sprites_UI/Kenney Bold.ttf" id="1"]
+[ext_resource type="Texture2D" uid="uid://djpcfj1uqgkjv" path="res://Assets/Sprites_UI/iniciar_depois.jpg" id="2"]
+[ext_resource type="Texture2D" uid="uid://c3ptfi4p0x5wj" path="res://Assets/Sprites_UI/icone-de-iniciacao_03.png" id="3"]
+[ext_resource type="Script" path="res://Scenes/CenaFinalDerrota.gd" id="4"]
 
-[sub_resource type="FontFile" id=1]
-size = 32
-font_data = ExtResource( 1 )
+[sub_resource type="FontFile" id="1"]
+fallbacks = Array[Font]([ExtResource("1")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
-[sub_resource type="FontFile" id=2]
-size = 32
-font_data = ExtResource( 1 )
+[sub_resource type="FontFile" id="2"]
+fallbacks = Array[Font]([ExtResource("1")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
 [node name="CenaFinalDerrota" type="Control"]
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+script = ExtResource("4")
 
 [node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -1880.0
-offset_bottom = -1040.0
-texture = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": true
-}
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2")
 
 [node name="Label" type="Label" parent="."]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
-theme_override_fonts/font = SubResource( 1 )
-theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("1")
 text = "You missed your chance. Entering wrong data in the forms is a big no no, and bureaucracy isn't forgiving, neither is the old lady..
 Back to the end of the line you go. Better luck next time."
-align = 1
-valign = 1
-autowrap = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
+autowrap_mode = 3
 
 [node name="TextureButton" type="TextureButton" parent="."]
-anchor_left = 0.0333333
-anchor_top = -0.0222222
-anchor_right = 1.03333
-anchor_bottom = 0.977778
-offset_left = 608.0
-offset_top = 784.0
-offset_right = -780.0
-offset_bottom = -169.0
-texture_normal = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": true
-}
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -532.0
+offset_top = -127.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("3")
 
 [node name="Label" type="Label" parent="TextureButton"]
-offset_left = 224.0
-offset_top = 40.0
-offset_right = 336.0
-offset_bottom = 88.0
-theme_override_fonts/font = SubResource( 2 )
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -12.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("2")
 text = "Ok..."
-__meta__ = {
-"_edit_use_anchors_": false
-}
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

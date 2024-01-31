@@ -1,345 +1,500 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=27 format=3 uid="uid://b7hjpmi3vhlr3"]
 
-[ext_resource path="res://Scripts/Manager_Geral.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Sprites_UI/Borda_das_Barras.png" type="Texture2D" id=2]
-[ext_resource path="res://Assets/Sprites_UI/inventario.png" type="Texture2D" id=3]
-[ext_resource path="res://Assets/Sprites_UI/Barra.png" type="Texture2D" id=4]
-[ext_resource path="res://Assets/Sprites_Jogador/jogggo_02.png" type="Texture2D" id=5]
-[ext_resource path="res://Assets/Sprites_UI/tickt.png" type="Texture2D" id=6]
-[ext_resource path="res://Assets/Sprites_UI/Kenney Bold.ttf" type="FontFile" id=7]
-[ext_resource path="res://Assets/Sprites_UI/iniciar_depois.jpg" type="Texture2D" id=8]
-[ext_resource path="res://Assets/Sprites_UI/icone-de-iniciacao_03.png" type="Texture2D" id=9]
-[ext_resource path="res://Scenes/Inventário.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Scenes/MenuEscape.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Assets/audio/bookOpen.wav" type="AudioStream" id=12]
-[ext_resource path="res://Assets/audio/bookClose.wav" type="AudioStream" id=13]
-[ext_resource path="res://Scenes/BotaoAudio.tscn" type="PackedScene" id=14]
-[ext_resource path="res://Assets/audio/PAPEL.wav" type="AudioStream" id=15]
-[ext_resource path="res://Scenes/Name.tscn" type="PackedScene" id=16]
-[ext_resource path="res://Scenes/PopUpFome.tscn" type="PackedScene" id=17]
-[ext_resource path="res://Assets/Sprites_UI/vendedor-de-bilete_03.png" type="Texture2D" id=18]
-[ext_resource path="res://Assets/Sprites_UI/sono_06.png" type="Texture2D" id=19]
-[ext_resource path="res://Assets/Sprites_UI/fome_03.png" type="Texture2D" id=20]
-[ext_resource path="res://Assets/Sprites_UI/Moldura_03.png" type="Texture2D" id=21]
+[ext_resource type="Script" path="res://Scripts/Manager_Geral.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://b8u4vjhltdnd1" path="res://Assets/Sprites_UI/Borda_das_Barras.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://b6ett0njooe5l" path="res://Assets/Sprites_UI/inventario.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://fu2ftnx2rj04" path="res://Assets/Sprites_UI/Barra.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://boktr5yl0eam8" path="res://Assets/Sprites_Jogador/jogggo_02.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://chqbro42aq0bq" path="res://Assets/Sprites_UI/tickt.png" id="6"]
+[ext_resource type="FontFile" uid="uid://kl4wdhepfkym" path="res://Assets/Sprites_UI/Kenney Bold.ttf" id="7"]
+[ext_resource type="Texture2D" uid="uid://djpcfj1uqgkjv" path="res://Assets/Sprites_UI/iniciar_depois.jpg" id="8"]
+[ext_resource type="Texture2D" uid="uid://c3ptfi4p0x5wj" path="res://Assets/Sprites_UI/icone-de-iniciacao_03.png" id="9"]
+[ext_resource type="PackedScene" uid="uid://cr2vuub6u3iej" path="res://Scenes/Inventário.tscn" id="10"]
+[ext_resource type="PackedScene" path="res://Scenes/MenuEscape.tscn" id="11"]
+[ext_resource type="AudioStream" uid="uid://sho637f2fmyw" path="res://Assets/audio/bookOpen.wav" id="12"]
+[ext_resource type="AudioStream" uid="uid://l67ida1vpumy" path="res://Assets/audio/bookClose.wav" id="13"]
+[ext_resource type="PackedScene" path="res://Scenes/BotaoAudio.tscn" id="14"]
+[ext_resource type="AudioStream" uid="uid://7exf42yact58" path="res://Assets/audio/PAPEL.wav" id="15"]
+[ext_resource type="PackedScene" uid="uid://pgfej3nrj1f2" path="res://Scenes/Name.tscn" id="16"]
+[ext_resource type="PackedScene" uid="uid://dauyua33hdf7i" path="res://Scenes/PopUpFome.tscn" id="17"]
+[ext_resource type="Texture2D" uid="uid://wk2g45n4kfa6" path="res://Assets/Sprites_UI/vendedor-de-bilete_03.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://bumm6vthood5i" path="res://Assets/Sprites_UI/sono_06.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://ct7dj7wv8ra2o" path="res://Assets/Sprites_UI/fome_03.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://dovotm4cuijb1" path="res://Assets/Sprites_UI/Moldura_03.png" id="21"]
 
-[sub_resource type="FontFile" id=1]
-resource_local_to_scene = true
-size = 42
-use_mipmaps = true
-use_filter = true
-font_data = ExtResource( 7 )
+[sub_resource type="FontFile" id="2"]
+fallbacks = Array[Font]([ExtResource("7")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
-[sub_resource type="FontFile" id=2]
-size = 25
-font_data = ExtResource( 7 )
+[sub_resource type="FontFile" id="3"]
+fallbacks = Array[Font]([ExtResource("7")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
-[sub_resource type="FontFile" id=3]
-use_mipmaps = true
-use_filter = true
-font_data = ExtResource( 7 )
+[sub_resource type="FontFile" id="4"]
+fallbacks = Array[Font]([ExtResource("7")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
-[sub_resource type="FontFile" id=4]
-size = 35
-use_mipmaps = true
-use_filter = true
-font_data = ExtResource( 7 )
+[sub_resource type="FontFile" id="5"]
+fallbacks = Array[Font]([ExtResource("7")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
-[sub_resource type="FontFile" id=5]
-size = 25
-font_data = ExtResource( 7 )
-
-[sub_resource type="FontFile" id=6]
-size = 32
-font_data = ExtResource( 7 )
+[sub_resource type="FontFile" id="6"]
+fallbacks = Array[Font]([ExtResource("7")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
 [node name="Interface" type="Control"]
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
 
 [node name="Fundo" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = ExtResource( 8 )
-__meta__ = {
-"_edit_use_anchors_": true
-}
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8")
 
 [node name="Fundo2" type="TextureRect" parent="Fundo"]
 visible = false
+layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = ExtResource( 18 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("18")
 
-[node name="PromptInicia" parent="." instance=ExtResource( 16 )]
-offset_left = 224.0
-offset_right = 224.0
+[node name="PromptInicia" parent="." instance=ExtResource("16")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.314063
+anchor_top = 0.27963
+anchor_right = 0.669271
+anchor_bottom = 0.727778
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" parent="PromptInicia" index="0"]
+layout_mode = 1
+anchors_preset = 15
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+
+[node name="LineEdit" parent="PromptInicia" index="1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.183284
+anchor_top = 0.177686
+anchor_right = 0.560117
+anchor_bottom = 0.241736
+max_length = 16
+context_menu_enabled = false
+middle_mouse_paste_enabled = false
+selecting_enabled = false
+drag_and_drop_selection_enabled = false
+caret_blink = false
+metadata/_edit_use_anchors_ = true
 
 [node name="Pergunta" parent="PromptInicia" index="2"]
-theme_override_fonts/font = SubResource( 1 )
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0953079
+anchor_top = 0.119835
+anchor_right = 0.558651
+anchor_bottom = 0.169421
+theme_override_fonts/font = ExtResource("7")
+theme_override_font_sizes/font_size = 11
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" parent="PromptInicia" index="3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.22434
+anchor_top = 0.291322
+anchor_right = 0.532258
+anchor_bottom = 0.350826
+offset_right = -35.0
+theme_override_font_sizes/font_size = 11
+text = "69420"
+vertical_alignment = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButton" parent="PromptInicia" index="4"]
+anchor_left = 0.353372
+anchor_top = 0.747934
+anchor_right = 0.634194
+anchor_bottom = 0.842397
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 340.481
+offset_bottom = 81.28
+scale = Vector2(0.36, 0.36)
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" parent="PromptInicia/TextureButton" index="0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="PanelDialogo" type="Panel" parent="."]
 visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.778704
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 794.0
-__meta__ = {
-"_edit_use_anchors_": true
-}
+metadata/_edit_use_anchors_ = true
 
 [node name="DialogoText" type="Label" parent="PanelDialogo"]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 0.996503
-theme_override_fonts/font = SubResource( 2 )
-text = "Did you ever hear the tragedy of Darth Plagueis The Wise? I thoh eventually, of course, he did. U himself."
-autowrap = true
-__meta__ = {
-"_edit_use_anchors_": true
-}
+theme_override_fonts/font = SubResource("2")
+text = "Did you ever hear the tragedy of Darth Plagueis The Wise? I thoh eventually, of course, he did. U himself.
+"
+autowrap_mode = 3
 
 [node name="BarraDeFome" type="TextureProgressBar" parent="."]
 visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -165.0
-offset_top = 456.0
-offset_right = -1545.0
-offset_bottom = -321.6
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0859375
+anchor_top = 0.422222
+anchor_right = 0.195313
+anchor_bottom = 0.702222
 value = 50.0
-texture_under = ExtResource( 2 )
-texture_progress = ExtResource( 4 )
 fill_mode = 3
 nine_patch_stretch = true
-__meta__ = {
-"_edit_use_anchors_": false,
-"_editor_description_": ""
-}
+texture_under = ExtResource("2")
+texture_progress = ExtResource("4")
+metadata/_edit_use_anchors_ = true
 
 [node name="TextRecFome" type="TextureRect" parent="BarraDeFome"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 239.0
-offset_top = 264.0
-offset_right = -239.0
-offset_bottom = 17.6
-texture = ExtResource( 20 )
-expand = true
+layout_mode = 0
+anchor_left = 0.442593
+anchor_top = 0.873016
+anchor_right = 0.557407
+anchor_bottom = 1.0582
+texture = ExtResource("20")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="BarraDeMoral" type="TextureProgressBar" parent="."]
 visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -60.0
-offset_top = 456.0
-offset_right = -1410.0
-offset_bottom = -321.6
+layout_mode = 0
+anchor_left = -0.03125
+anchor_top = 0.422222
+anchor_right = 0.265625
+anchor_bottom = 0.702222
 value = 20.0
-texture_under = ExtResource( 2 )
-texture_progress = ExtResource( 4 )
 fill_mode = 3
 nine_patch_stretch = true
-__meta__ = {
-"_edit_use_anchors_": false,
-"_editor_description_": ""
-}
+texture_under = ExtResource("2")
+texture_progress = ExtResource("4")
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRectMoral" type="TextureRect" parent="BarraDeMoral"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 260.0
-offset_top = 264.0
-offset_right = -270.0
-offset_bottom = 2.59998
-texture = ExtResource( 19 )
-expand = true
+layout_mode = 0
+anchor_left = 0.45614
+anchor_top = 0.873016
+anchor_right = 0.526316
+anchor_bottom = 1.0086
+texture = ExtResource("19")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="InventarioBotao" type="TextureButton" parent="."]
 visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 1680.0
-offset_top = 473.409
-offset_right = -60.0
-offset_bottom = -534.59
-texture_normal = ExtResource( 3 )
-expand = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.847917
+anchor_top = 0.333333
+anchor_right = 1.03281
+anchor_bottom = 0.52037
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3")
+ignore_texture_size = true
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
 
 [node name="Folhado" type="AudioStreamPlayer" parent="InventarioBotao"]
-stream = ExtResource( 15 )
+stream = ExtResource("15")
 
 [node name="NumeroFila" type="TextureButton" parent="."]
 visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 1800.0
-offset_top = 484.8
-offset_right = -11.2493
-offset_bottom = -537.6
-texture_normal = ExtResource( 6 )
-expand = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.89375
+anchor_top = 0.302778
+anchor_right = 0.950391
+anchor_bottom = 0.356111
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("6")
+ignore_texture_size = true
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
 
 [node name="NumeroFilaTexto" type="Label" parent="NumeroFila"]
+layout_mode = 1
+anchors_preset = -1
 anchor_left = 0.275862
 anchor_top = 0.25
 anchor_right = 0.965517
 anchor_bottom = 0.6875
 offset_left = -8.0
 offset_right = -7.99999
-theme_override_fonts/font = SubResource( 3 )
-theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("3")
 text = "69"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Jogador" type="TextureRect" parent="."]
 visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 1715.68
-offset_top = 568.0
-offset_right = 747.68
-offset_bottom = 568.0
-scale = Vector2( 0.199998, 0.199998 )
-texture = ExtResource( 5 )
-expand = true
-__meta__ = {
-"_edit_use_anchors_": true
-}
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.869271
+anchor_top = 0.511111
+anchor_right = 0.968437
+anchor_bottom = 0.711109
+offset_right = 761.602
+offset_bottom = 864.002
+scale = Vector2(0.199998, 0.199998)
+texture = ExtResource("5")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect2" type="TextureRect" parent="Jogador"]
 show_behind_parent = true
 light_mask = -2147483647
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -114.729
-offset_top = -4.0
-offset_right = 105.271
-offset_bottom = 41.0
-texture = ExtResource( 21 )
-expand = true
-__meta__ = {
-"_edit_group_": true,
-"_edit_use_anchors_": false
-}
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.120514
+anchor_top = -0.0037037
+anchor_right = 1.11058
+anchor_bottom = 1.03796
+texture = ExtResource("21")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="BotaoInicio" type="TextureButton" parent="."]
 visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 1380.0
-offset_top = 944.0
-offset_right = -8.00073
-offset_bottom = -8.99963
-texture_normal = ExtResource( 9 )
-__meta__ = {
-"_edit_use_anchors_": true
-}
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.71875
+anchor_top = 0.874074
+anchor_right = 0.995833
+anchor_bottom = 0.991667
+offset_right = -0.000732422
+texture_normal = ExtResource("9")
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="BotaoInicio"]
-anchor_left = 0.300752
-anchor_top = 0.251969
-anchor_right = 0.721804
-anchor_bottom = 0.755906
-offset_left = 1.52588e-05
-theme_override_fonts/font = SubResource( 4 )
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -12.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("4")
 text = "Start!"
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": true
-}
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="BotaoAudio" parent="BotaoInicio" instance=ExtResource( 14 )]
+[node name="BotaoAudio" parent="BotaoInicio" instance=ExtResource("14")]
 
 [node name="Prompt" type="LineEdit" parent="."]
-visible = false
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
 anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 320.0
-offset_top = 640.0
-offset_right = -960.0
-offset_bottom = -368.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Prompt"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -256.0
-offset_right = 372.0
-offset_bottom = -37.0
-scale = Vector2( 0.632707, 0.876612 )
-theme_override_fonts/font = SubResource( 5 )
-theme_override_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Your name, please, don't forget propper casing, dear."
-valign = 2
-autowrap = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
+anchor_bottom = 0.5
+offset_top = -15.0
+offset_right = -912.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Timer2" type="Timer" parent="Prompt"]
-wait_time = 60.0
+wait_time = 3600.0
 one_shot = true
 
-[node name="Label2" type="Label" parent="Prompt"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 528.0
-offset_top = -592.0
-offset_bottom = -600.0
-theme_override_fonts/font = SubResource( 6 )
-theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+[node name="Panel" type="Panel" parent="Prompt"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -2.90323
+anchor_right = 1.5837
+anchor_bottom = -0.580645
+offset_right = 6.10352e-05
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Prompt/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.00844391
+anchor_top = 0.347222
+anchor_right = 0.611385
+anchor_bottom = 0.724652
+offset_right = 290.161
+offset_bottom = 3.82503
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.632707, 0.876612)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("5")
+text = "Your name, please, don't forget propper casing, dear."
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="Prompt/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.856745
+anchor_top = 0.319444
+anchor_right = 0.984701
+anchor_bottom = 0.652778
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("6")
 text = "69.420"
-autowrap = true
 clip_text = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
+metadata/_edit_use_anchors_ = true
 
-[node name="PopUpFome" parent="." instance=ExtResource( 17 )]
+[node name="PopUpFome" parent="." instance=ExtResource("17")]
 visible = false
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
 
-[node name="Inventario" parent="." instance=ExtResource( 10 )]
-visible = false
-position = Vector2( 712, -32 )
-scale = Vector2( 1.44, 1.44 )
+[node name="TextureRect" parent="PopUpFome" index="0"]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 160.718
+offset_bottom = 242.378
 
-[node name="MenuEscape" parent="." instance=ExtResource( 11 )]
+[node name="Label" parent="PopUpFome/TextureRect" index="0"]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="TextureButton" parent="PopUpFome/TextureRect" index="1"]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 532.0
+offset_bottom = 127.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Label" parent="PopUpFome/TextureRect/TextureButton" index="0"]
+layout_mode = 0
+anchors_preset = 0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_top = 0.0
+offset_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Inventario" parent="." instance=ExtResource("10")]
 visible = false
-position = Vector2( -16, 0 )
+layout_mode = 1
+offset_left = 514.0
+offset_top = -67.0
+offset_right = 514.0
+offset_bottom = -67.0
+scale = Vector2(0.840001, 0.840001)
+
+[node name="MenuEscape" parent="." instance=ExtResource("11")]
+visible = false
+position = Vector2(-16, 0)
 
 [node name="AudioStreamFechar" type="AudioStreamPlayer" parent="MenuEscape"]
-stream = ExtResource( 13 )
+stream = ExtResource("13")
 
 [node name="AudioStreamAbrir" type="AudioStreamPlayer" parent="MenuEscape"]
-stream = ExtResource( 12 )
+stream = ExtResource("12")
 
-[node name="BotaoAudio" parent="MenuEscape" instance=ExtResource( 14 )]
+[node name="BotaoAudio" parent="MenuEscape" instance=ExtResource("14")]
 
 [node name="Button" type="Button" parent="."]
 visible = false
+layout_mode = 0
 offset_left = 64.0
 offset_top = 48.0
 offset_right = 378.0
 offset_bottom = 220.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+
 [connection signal="text_submitted" from="PromptInicia/LineEdit" to="." method="_on_LineEdit_text_entered"]
 [connection signal="pressed" from="InventarioBotao" to="." method="_on_InventarioBotao_pressed"]
 [connection signal="pressed" from="BotaoInicio" to="." method="_on_BotaoInicio_pressed"]
@@ -348,5 +503,4 @@ __meta__ = {
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 
 [editable path="PromptInicia"]
-
 [editable path="PopUpFome"]

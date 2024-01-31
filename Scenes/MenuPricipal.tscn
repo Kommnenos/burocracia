@@ -1,170 +1,145 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=7 format=3 uid="uid://cmn65v4stypp1"]
 
-[ext_resource path="res://Assets/Sprites_UI/iniciar_antes.jpg" type="Texture2D" id=1]
-[ext_resource path="res://Assets/Sprites_UI/icone-de-iniciacao_03.png" type="Texture2D" id=2]
-[ext_resource path="res://Scenes/MenuPricipal.gd" type="Script" id=3]
-[ext_resource path="res://Assets/Sprites_UI/Kenney Bold.ttf" type="FontFile" id=4]
-[ext_resource path="res://Scenes/BotaoAudio.tscn" type="PackedScene" id=5]
+[ext_resource type="Texture2D" uid="uid://bemyqo7hpjd6" path="res://Assets/Sprites_UI/iniciar_antes.jpg" id="1"]
+[ext_resource type="Texture2D" uid="uid://c3ptfi4p0x5wj" path="res://Assets/Sprites_UI/icone-de-iniciacao_03.png" id="2"]
+[ext_resource type="Script" path="res://Scenes/MenuPricipal.gd" id="3"]
+[ext_resource type="FontFile" uid="uid://kl4wdhepfkym" path="res://Assets/Sprites_UI/Kenney Bold.ttf" id="4"]
+[ext_resource type="PackedScene" path="res://Scenes/BotaoAudio.tscn" id="5"]
 
-[sub_resource type="FontFile" id=1]
-size = 70
-use_mipmaps = true
-use_filter = true
-font_data = ExtResource( 4 )
+[sub_resource type="FontFile" id="1"]
+fallbacks = Array[Font]([ExtResource("4")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
 [node name="MenuPricipal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3")
 
 [node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = ExtResource( 1 )
-expand = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
+texture = ExtResource("1")
+expand_mode = 1
 
-[node name="Play" type="TextureButton" parent="."]
-anchor_left = 0.24179
-anchor_top = 0.0716163
-anchor_right = 0.761321
-anchor_bottom = 0.283283
-texture_normal = ExtResource( 2 )
-expand = true
-__meta__ = {
-"_edit_use_anchors_": true
-}
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -434.0
+offset_right = 532.0
+offset_bottom = 434.0
+grow_vertical = 2
+theme_override_constants/separation = 120
+alignment = 1
 
-[node name="Label" type="Label" parent="Play"]
-anchor_left = 0.259986
-anchor_top = 0.231105
-anchor_right = 0.742191
-anchor_bottom = 0.799784
-offset_top = 3.8147e-06
+[node name="Play" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2")
+
+[node name="Label" type="Label" parent="VBoxContainer/Play"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -12.0
+offset_bottom = 12.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 2
 size_flags_vertical = 2
-theme_override_fonts/font = SubResource( 1 )
+theme_override_fonts/font = SubResource("1")
 text = "Play"
-align = 1
-valign = 1
-autowrap = true
+horizontal_alignment = 1
+vertical_alignment = 1
 clip_text = true
-__meta__ = {
-"_edit_use_anchors_": true
-}
 
-[node name="BotaoAudio" parent="Play" instance=ExtResource( 5 )]
+[node name="BotaoAudio" parent="VBoxContainer/Play" instance=ExtResource("5")]
 
-[node name="Play2" type="TextureButton" parent="."]
-anchor_left = 0.24179
-anchor_top = 0.283283
-anchor_right = 0.761321
-anchor_bottom = 0.49495
-texture_normal = ExtResource( 2 )
-expand = true
-__meta__ = {
-"_edit_use_anchors_": true
-}
+[node name="Play2" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2")
 
-[node name="Label" type="Label" parent="Play2"]
-anchor_left = 0.109273
-anchor_top = 0.231846
-anchor_right = 0.878195
-anchor_bottom = 0.800525
-offset_top = 3.8147e-06
+[node name="Label" type="Label" parent="VBoxContainer/Play2"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -12.0
+offset_bottom = 12.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 2
 size_flags_vertical = 2
-theme_override_fonts/font = SubResource( 1 )
+theme_override_fonts/font = SubResource("1")
 text = "How to Play"
-align = 1
-valign = 1
-autowrap = true
+horizontal_alignment = 1
+vertical_alignment = 1
 clip_text = true
-__meta__ = {
-"_edit_use_anchors_": true
-}
 
-[node name="BotaoAudio" parent="Play2" instance=ExtResource( 5 )]
+[node name="BotaoAudio" parent="VBoxContainer/Play2" instance=ExtResource("5")]
 
-[node name="Play3" type="TextureButton" parent="."]
-anchor_left = 0.24179
-anchor_top = 0.49495
-anchor_right = 0.761321
-anchor_bottom = 0.706616
-texture_normal = ExtResource( 2 )
-expand = true
-__meta__ = {
-"_edit_use_anchors_": true
-}
+[node name="Play3" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2")
 
-[node name="Label2" type="Label" parent="Play3"]
-anchor_left = 0.109273
-anchor_top = 1.22886
-anchor_right = 0.878195
-anchor_bottom = 1.79754
-offset_top = -228.6
-offset_right = 6.10352e-05
-offset_bottom = -228.6
+[node name="Label2" type="Label" parent="VBoxContainer/Play3"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -12.0
+offset_bottom = 12.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 2
 size_flags_vertical = 2
-theme_override_fonts/font = SubResource( 1 )
+theme_override_fonts/font = SubResource("1")
 text = "Credits"
-align = 1
-valign = 1
-autowrap = true
+horizontal_alignment = 1
+vertical_alignment = 1
 clip_text = true
-__meta__ = {
-"_edit_use_anchors_": true
-}
 
-[node name="BotaoAudio" parent="Play3" instance=ExtResource( 5 )]
+[node name="BotaoAudio" parent="VBoxContainer/Play3" instance=ExtResource("5")]
 
-[node name="Play4" type="TextureButton" parent="."]
-anchor_left = 0.24179
-anchor_top = 0.706616
-anchor_right = 0.761321
-anchor_bottom = 0.918283
-texture_normal = ExtResource( 2 )
-expand = true
-__meta__ = {
-"_edit_use_anchors_": true
-}
+[node name="Play4" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2")
 
-[node name="Label2" type="Label" parent="Play4"]
-anchor_left = 0.109273
-anchor_top = 1.22886
-anchor_right = 0.878195
-anchor_bottom = 1.79754
-offset_top = -228.6
-offset_right = 6.10352e-05
-offset_bottom = -228.6
+[node name="Label2" type="Label" parent="VBoxContainer/Play4"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -12.0
+offset_bottom = 12.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 2
 size_flags_vertical = 2
-theme_override_fonts/font = SubResource( 1 )
+theme_override_fonts/font = SubResource("1")
 text = "Exit"
-align = 1
-valign = 1
-autowrap = true
+horizontal_alignment = 1
+vertical_alignment = 1
 clip_text = true
-__meta__ = {
-"_edit_use_anchors_": true
-}
 
-[node name="BotaoAudio" parent="Play4" instance=ExtResource( 5 )]
-[connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
-[connection signal="pressed" from="Play2" to="." method="_on_Play2_pressed"]
-[connection signal="pressed" from="Play3" to="." method="_on_Play3_pressed"]
-[connection signal="pressed" from="Play4" to="." method="_on_Play4_pressed"]
+[node name="BotaoAudio" parent="VBoxContainer/Play4" instance=ExtResource("5")]
+
+[connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="VBoxContainer/Play2" to="." method="_on_Play2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Play3" to="." method="_on_Play3_pressed"]
+[connection signal="pressed" from="VBoxContainer/Play4" to="." method="_on_Play4_pressed"]

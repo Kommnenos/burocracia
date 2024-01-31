@@ -1,41 +1,51 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=7 format=3 uid="uid://puujirbkmwoo"]
 
-[ext_resource path="res://Assets/Sprites_UI/Kenney Bold.ttf" type="FontFile" id=1]
-[ext_resource path="res://Assets/Sprites_UI/Crebito.png" type="Texture2D" id=2]
-[ext_resource path="res://Assets/Sprites_UI/SETA.png" type="Texture2D" id=3]
-[ext_resource path="res://Scenes/Creditos.gd" type="Script" id=4]
-[ext_resource path="res://Scenes/BotaoAudio.tscn" type="PackedScene" id=5]
+[ext_resource type="FontFile" uid="uid://kl4wdhepfkym" path="res://Assets/Sprites_UI/Kenney Bold.ttf" id="1"]
+[ext_resource type="Texture2D" uid="uid://2okikc7wvv5t" path="res://Assets/Sprites_UI/Crebito.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://bmi1hu0a782b" path="res://Assets/Sprites_UI/SETA.png" id="3"]
+[ext_resource type="Script" path="res://Scenes/Creditos.gd" id="4"]
+[ext_resource type="PackedScene" path="res://Scenes/BotaoAudio.tscn" id="5"]
 
-[sub_resource type="FontFile" id=1]
-size = 30
-outline_color = Color( 0, 0, 0, 1 )
-use_mipmaps = true
-use_filter = true
-font_data = ExtResource( 1 )
+[sub_resource type="FontFile" id="1"]
+fallbacks = Array[Font]([ExtResource("1")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/glyphs/0/advance = Vector2(0, 0)
+cache/0/16/0/glyphs/0/offset = Vector2(0, 0)
+cache/0/16/0/glyphs/0/size = Vector2(0, 0)
+cache/0/16/0/glyphs/0/uv_rect = Rect2(0, 0, 0, 0)
+cache/0/16/0/glyphs/0/texture_idx = -1
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
 [node name="Creditos" type="Control"]
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+script = ExtResource("4")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2")
+expand_mode = 1
 
 [node name="Label" type="Label" parent="."]
-self_modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+anchors_preset = -1
 anchor_left = 0.0208333
 anchor_top = 0.037037
 anchor_right = 0.979167
 anchor_bottom = 0.962963
-theme_override_fonts/font = SubResource( 1 )
+theme_override_fonts/font = SubResource("1")
 text = "A game by
 Jhony
 Leo
@@ -49,22 +59,48 @@ Sulamita
 Burocracia is a game by capivara jogos 
 made for GMTK GameJam 2020
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Updated by Pedro in 2024
+
+
 "
-align = 1
-valign = 2
-__meta__ = {
-"_edit_use_anchors_": true
-}
 
 [node name="VoltarDoCredito" type="TextureButton" parent="."]
+layout_mode = 0
 anchor_left = 0.0208333
 anchor_top = 0.792593
 anchor_right = 0.0932292
 anchor_bottom = 0.865741
-texture_normal = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": true
-}
+texture_normal = ExtResource("3")
 
-[node name="BotaoAudio" parent="VoltarDoCredito" instance=ExtResource( 5 )]
+[node name="BotaoAudio" parent="VoltarDoCredito" instance=ExtResource("5")]
+
 [connection signal="pressed" from="VoltarDoCredito" to="." method="_on_VoltarDoCredito_pressed"]

@@ -19,12 +19,12 @@ var nom_jogador
 var vac_dat = "06/09/1996"
 var dat_nasc = "27/05/1992"
 
-var cpf_na_nota_jog
-var num_rg_jog
-var num_reser_jog
-var nom_jogador_jog
-var vac_dat_jog
-var dat_nasc_jog
+var cpf_na_nota_jog: String
+var num_rg_jog: String
+var num_reser_jog: String
+var nom_jogador_jog: String
+var vac_dat_jog: String
+var dat_nasc_jog: String
 
 ####
 var timer_start = false
@@ -82,7 +82,7 @@ func _ready():
 
 func _process(delta):
 	$NumeroFila/NumeroFilaTexto.text = str(lugar_fila)	
-	$Prompt/Label2.text = str($Prompt/Timer2.time_left)
+	$Prompt/Panel/Label2.text = str($Prompt/Timer2.time_left)
 	if Input.is_action_just_pressed("escape"):
 		if $MenuEscape.visible == false:
 			$MenuEscape.visible = true
@@ -294,20 +294,20 @@ func evento3():
 			$BarraDeMoral.value += 20
 			$PanelDialogo/DialogoText.text = "SUCCESS! You both decide to team up in a rare moment of camaraderie, motivated by your favorite team, and use a little bit of intimidation to secure a few spots ahead in line. Nobody was hurt, except for your honor of course."
 			lugar_fila -= 50
-			yield (self, "space")
+			await self.space
 			event_picker()
 		else:
 			if $BarraDeMoral.value <= 30:
 				$Fundo/Fundo2.visible = false
 				$PanelDialogo/DialogoText.text = "FAILURE! Oh no, looks like you cheer for the greatest rival of the hooligan’s team. He is really angry and kindly asked you to go back a few spots in line. You kindly comply."
 				lugar_fila += 30
-				yield (self, "space")
+				await self.space
 				event_picker()
 			else:
 				$Fundo/Fundo2.visible = false
 				$PanelDialogo/DialogoText.text = "FAILURE! Oh no, looks like you cheer for the greatest rival of the hooligan’s team. He is really angry and kindly asked you to go back a few spots in line. You kindly comply."
 				lugar_fila += 15
-				yield (self, "space")
+				await self.space
 				event_picker()
 	elif button_pressed == "2":
 		if tem_dado_em_casa() > 50:
@@ -315,20 +315,20 @@ func evento3():
 			$BarraDeMoral.value += 20
 			$PanelDialogo/DialogoText.text = "SUCCESS! You both decide to team up in a rare moment of camaraderie, motivated by your favorite team, and use a little bit of intimidation to secure a few spots ahead in line. Nobody was hurt, except for your honor of course."
 			lugar_fila -= 50
-			yield (self, "space")
+			await self.space
 			event_picker()
 		else:
 			if $BarraDeMoral.value <= 30:
 				$Fundo/Fundo2.visible = false
 				$PanelDialogo/DialogoText.text = "FAILURE! Oh no, looks like you cheer for the greatest rival of the hooligan’s team. He is really angry and kindly asked you to go back a few spots in line. You kindly comply."
 				lugar_fila += 30
-				yield (self, "space")
+				await self.space
 				event_picker()
 			else:
 				$Fundo/Fundo2.visible = false
 				$PanelDialogo/DialogoText.text = "FAILURE! Oh no, looks like you cheer for the greatest rival of the hooligan’s team. He is really angry and kindly asked you to go back a few spots in line. You kindly comply."
 				lugar_fila += 15
-				yield (self, "space")
+				await self.space
 				event_picker()
 
 func evento4():
@@ -569,27 +569,27 @@ func _on_Prompt_text_entered(new_text):
 		nom_jogador_jog = new_text
 		$Prompt.clear()
 		num_fase2 += 1
-		$Prompt/Label.text = "Your draft certificate id number, please."
+		$Prompt/Panel/Label.text = "Your draft certificate id number, please."
 	elif num_fase2 == 2:
 		num_reser_jog = new_text
 		$Prompt.clear()
 		num_fase2 += 1
-		$Prompt/Label.text = "Your id number, please."
+		$Prompt/Panel/Label.text = "Your id number, please."
 	elif num_fase2 == 3:
 		num_rg_jog = new_text
 		$Prompt.clear()
 		num_fase2 += 1
-		$Prompt/Label.text = "Your financial id number, please."
+		$Prompt/Panel/Label.text = "Your financial id number, please."
 	elif num_fase2 == 4:
 		cpf_na_nota_jog = new_text
 		$Prompt.clear()
 		num_fase2 += 1
-		$Prompt/Label.text = "Your date of birth please, type it just like in your documents dearie, in a dd mm yyyy format."
+		$Prompt/Panel/Label.text = "Your date of birth please, type it just like in your documents dearie, in a dd/mm/yyyy format."
 	elif num_fase2 == 5:
 		dat_nasc_jog = new_text
 		$Prompt.clear()
 		num_fase2 += 1
-		$Prompt/Label.text = "Now look in your vaccination card and look for the date of your most recent Lambimia shot, write the date just like the previous one in a dd mm yyyy format"
+		$Prompt/Panel/Label.text = "Now look in your vaccination card and look for the date of your most recent Lambimia shot, write the date just like the previous one in a dd/mm/yyyy format"
 	elif num_fase2 == 6:
 		vac_dat_jog = new_text
 		$Prompt.clear()

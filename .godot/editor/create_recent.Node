@@ -1,8 +1,9 @@
+Panel
 Control
+AudioStreamPlayer
+AudioStreamPlayer2D
 VBoxContainer
 Container
 TextureRect
-Panel
 Sprite2D
 PopupPanel
-AudioStreamPlayer
