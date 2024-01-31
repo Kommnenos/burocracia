@@ -1,0 +1,6 @@
+res://default_env.tres
+res://Scenes/CenaInicial.tscn
+res://Scenes/Name.tscn
+res://Scenes/MenuPricipal.tscn
+res://Scenes/Inventário.tscn
+res://Scenes/Creditos.tscn

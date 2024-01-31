@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Assets/Sprites_Jogador/pessoa.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Sprites_Jogador/pessoa.png" type="Texture2D" id=1]
 
 [node name="Teste" type="Node2D"]
 
-[node name="pessoa" type="Sprite" parent="."]
+[node name="pessoa" type="Sprite2D" parent="."]
 position = Vector2( 1040, 472 )
 texture = ExtResource( 1 )

@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/Efeito_online-audio-converter.com.wav-6a1b8213bbfc91716c1229489c651432.sample"
+type="AudioStreamWAV"
+uid="uid://c2geqodmxe2cb"
+path="res://.godot/imported/Efeito_online-audio-converter.com.wav-6a1b8213bbfc91716c1229489c651432.sample"
 
 [deps]
 
 source_file="res://Assets/audio/Efeito_online-audio-converter.com.wav"
-dest_files=[ "res://.import/Efeito_online-audio-converter.com.wav-6a1b8213bbfc91716c1229489c651432.sample" ]
+dest_files=["res://.godot/imported/Efeito_online-audio-converter.com.wav-6a1b8213bbfc91716c1229489c651432.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

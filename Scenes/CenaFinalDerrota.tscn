@@ -1,0 +1,72 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Sprites_UI/Kenney Bold.ttf" type="FontFile" id=1]
+[ext_resource path="res://Assets/Sprites_UI/iniciar_depois.jpg" type="Texture2D" id=2]
+[ext_resource path="res://Assets/Sprites_UI/icone-de-iniciacao_03.png" type="Texture2D" id=3]
+[ext_resource path="res://Scenes/CenaFinalDerrota.gd" type="Script" id=4]
+
+[sub_resource type="FontFile" id=1]
+size = 32
+font_data = ExtResource( 1 )
+
+[sub_resource type="FontFile" id=2]
+size = 32
+font_data = ExtResource( 1 )
+
+[node name="CenaFinalDerrota" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1880.0
+offset_bottom = -1040.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_fonts/font = SubResource( 1 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "You missed your chance. Entering wrong data in the forms is a big no no, and bureaucracy isn't forgiving, neither is the old lady..
+Back to the end of the line you go. Better luck next time."
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+anchor_left = 0.0333333
+anchor_top = -0.0222222
+anchor_right = 1.03333
+anchor_bottom = 0.977778
+offset_left = 608.0
+offset_top = 784.0
+offset_right = -780.0
+offset_bottom = -169.0
+texture_normal = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="TextureButton"]
+offset_left = 224.0
+offset_top = 40.0
+offset_right = 336.0
+offset_bottom = 88.0
+theme_override_fonts/font = SubResource( 2 )
+text = "Ok..."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

@@ -1,0 +1,111 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1706669394
+default_env.tres::Environment::-1::1706669385::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1594564949::0::1::::<><>::
+icon.png::Image::3781674865579241168::1594526255::1706669396::1::::<><>::
+README.md::TextFile::-1::1706642279::0::1::::<><>::
+::res://addons/::1706642459
+::res://addons/godot-git-plugin/::1706642460
+git_plugin.gdextension::GDExtension::-1::1706642459::0::1::::<><>::
+plugin.cfg::TextFile::-1::1706642460::0::1::::<><>::
+THIRDPARTY.md::TextFile::-1::1706642460::0::1::::<><>::
+::res://addons/godot-git-plugin/linux/::1706642460
+::res://addons/godot-git-plugin/macos/::1706642460
+::res://addons/godot-git-plugin/win64/::1706669388
+::res://Assets/::1706669370
+::res://Assets/audio/::1706669370
+bookClose.wav::AudioStreamWAV::838030379294022920::1594526255::1706669398::1::::<><>::
+bookOpen.wav::AudioStreamWAV::1278756747623798382::1594526255::1706669398::1::::<><>::
+click5_online-audio-converter.com.wav::AudioStreamWAV::1606092920229180519::1594526255::1706669398::1::::<><>::
+Efeito_online-audio-converter.com.wav::AudioStreamWAV::6680598593348443905::1594526255::1706669398::1::::<><>::
+Mela_-_03_-_Horrible (online-audio-converter.com).wav::AudioStreamWAV::7604098765546356429::1594526255::1706669400::1::::<><>::
+Mela_-_03_-_Horrible.mp3::AudioStreamMP3::3453191312400078761::1594526255::1706669396::1::::<><>::
+PAPEL.wav::AudioStreamWAV::2255707493213853753::1594526255::1706669398::1::::<><>::
+::res://Assets/Sprites_Jogador/::1706669370
+Cena_1_-_Sono.png::CompressedTexture2D::4111121881754728530::1594570072::1706669398::1::::<><>::
+Design_sem_nome.ogv::VideoStreamTheora::-1::1594564723::0::1::::<><>::
+jogggo_02.png::CompressedTexture2D::3390893866834264265::1594526255::1706669397::1::::<><>::
+pessoa.png::CompressedTexture2D::3171751553800445786::1594526255::1706669397::1::::<><>::
+preto.jpg::CompressedTexture2D::69180447152393011::1594526255::1706669397::1::::<><>::
+Reserva_natural_2_03.png::CompressedTexture2D::4203352369328136287::1594526255::1706669397::1::::<><>::
+Reserva_natural_2_06.png::CompressedTexture2D::5077046898707295078::1594526255::1706669397::1::::<><>::
+RG2_03.png::CompressedTexture2D::8674502631863502202::1594526255::1706669397::1::::<><>::
+RG2_06.png::CompressedTexture2D::5286444655920714557::1594526255::1706669397::1::::<><>::
+::res://Assets/Sprites_UI/::1706669370
+1111.ogv::VideoStreamTheora::-1::1594563990::0::1::::<><>::
+Barra.png::CompressedTexture2D::393881080153461867::1594526255::1706669398::1::::<><>::
+Borda_das_Barras.png::CompressedTexture2D::4745738857340690844::1594526255::1706669398::1::::<><>::
+Capivara.png::CompressedTexture2D::4655663219781927747::1594526255::1706669397::1::::<><>::
+Cara_na_praia.jpg::CompressedTexture2D::5590876930415162235::1594574873::1706669398::1::::<><>::
+carteira_de_vacinacao2_03.png::CompressedTexture2D::481704536966580290::1594526255::1706669398::1::::<><>::
+cena_2_-_Fila.jpg::CompressedTexture2D::5132989492997601808::1594570427::1706669398::1::::<><>::
+CPF2_03.png::CompressedTexture2D::5611628876268900183::1594526255::1706669398::1::::<><>::
+Crebito.png::CompressedTexture2D::1924622052869908971::1594526255::1706669398::1::::<><>::
+desconhecido_03.png::CompressedTexture2D::7494065362178884854::1594574158::1706669398::1::::<><>::
+Design_sem_nome_1.png::CompressedTexture2D::3949766284929161898::1594526255::1706669397::1::::<><>::
+folha.png::CompressedTexture2D::7802740373489778443::1594526255::1706669398::1::::<><>::
+fome_03.png::CompressedTexture2D::6172689423493987548::1594576134::1706669397::1::::<><>::
+Fundo-inventario_03.png::CompressedTexture2D::2771978864152997665::1594526255::1706669398::1::::<><>::
+icone-de-iniciacao_03.png::CompressedTexture2D::6770257673096101205::1594526255::1706669397::1::::<><>::
+iniciar_antes.jpg::CompressedTexture2D::79218681085938705::1594526255::1706669398::1::::<><>::
+iniciar_depois.jpg::CompressedTexture2D::7822058186892952351::1594526255::1706669397::1::::<><>::
+inventario.png::CompressedTexture2D::4571721234029494343::1594526255::1706669397::1::::<><>::
+jojo-2_03.png::CompressedTexture2D::4201827148272213579::1594526255::1706669396::1::::<><>::
+jojo-2_05.png::CompressedTexture2D::2237383638624448302::1594526255::1706669396::1::::<><>::
+jojo-2_07.png::CompressedTexture2D::5625724360944762544::1594526255::1706669396::1::::<><>::
+jojo-2_09.png::CompressedTexture2D::1628820527617298405::1594526255::1706669396::1::::<><>::
+jojo-2_11.png::CompressedTexture2D::7623790937640867638::1594526255::1706669396::1::::<><>::
+jojo-2_13.png::CompressedTexture2D::5322833892881576905::1594526255::1706669396::1::::<><>::
+jojo-2_15.png::CompressedTexture2D::2156025581368013780::1594526255::1706669396::1::::<><>::
+jojo-2_17.png::CompressedTexture2D::1673738226493183761::1594526255::1706669396::1::::<><>::
+jojo-2_19.png::CompressedTexture2D::7406597622572633939::1594526255::1706669396::1::::<><>::
+jojo-2_21.png::CompressedTexture2D::6375125343737712374::1594526255::1706669396::1::::<><>::
+jojo-2_23.png::CompressedTexture2D::769034573346430215::1594526255::1706669396::1::::<><>::
+jojo_3_03.png::CompressedTexture2D::841194334896327212::1594526255::1706669396::1::::<><>::
+Kenney Bold.ttf::FontFile::726396840516793532::1594526255::1706669396::1::::<><>::
+maquina.png::CompressedTexture2D::1301499165076017232::1594572359::1706669397::1::::<><>::
+meteoro.png::CompressedTexture2D::4574194478621503058::1594574211::1706669397::1::::<><>::
+molduras_09.png::CompressedTexture2D::3716434604502588960::1594576165::1706669396::1::::<><>::
+molduras_14.png::CompressedTexture2D::5965857401119165960::1594576158::1706669396::1::::<><>::
+Moldura_03.png::CompressedTexture2D::8186142438027387616::1594576700::1706669396::1::::<><>::
+RG2_03.png::CompressedTexture2D::7438736659496624811::1594577354::1706669396::1::::<><>::
+Screenshot_6.png::CompressedTexture2D::2177481983677501911::1594526255::1706669396::1::::<><>::
+SETA2.png::CompressedTexture2D::3735547878885705447::1594526255::1706669396::1::::<><>::
+SETA.png::CompressedTexture2D::95493942967130427::1594526255::1706669396::1::::<><>::
+sono_06.png::CompressedTexture2D::3815755185705663744::1594576148::1706669396::1::::<><>::
+tickt.png::CompressedTexture2D::5297285173760179254::1594526255::1706669397::1::::<><>::
+vendedor-de-bilete_03.png::CompressedTexture2D::1566449981296533875::1594570562::1706669397::1::::<><>::
+vovo-e-desconhecido_06.png::CompressedTexture2D::6764983750709580130::1594574146::1706669397::1::::<><>::
+::res://Localisation/::1706669370
+english_loc.json::JSON::-1::1594526255::0::1::::<><>::
+::res://Scenes/::1706669370
+BotaoAudio.tscn::PackedScene::-1::1706669385::0::1::::<><>::res://Assets/audio/click5_online-audio-converter.com.wav
+CenaFinal.gd::GDScript::-1::1706669385::0::1::::<>Control<>::
+CenaFinal.tscn::PackedScene::-1::1706669385::0::1::::<><>::res://Assets/Sprites_UI/Kenney Bold.ttf<>res://Assets/Sprites_UI/Cara_na_praia.jpg<>res://Assets/Sprites_UI/icone-de-iniciacao_03.png<>res://Scenes/CenaFinal.gd
+CenaFinalDerrota.gd::GDScript::-1::1706669385::0::1::::<>Control<>::
+CenaFinalDerrota.tscn::PackedScene::-1::1706669385::0::1::::<><>::res://Assets/Sprites_UI/Kenney Bold.ttf<>res://Assets/Sprites_UI/iniciar_depois.jpg<>res://Assets/Sprites_UI/icone-de-iniciacao_03.png<>res://Scenes/CenaFinalDerrota.gd
+CenaInicial.tscn::PackedScene::-1::1706669385::0::1::::<><>::res://Scripts/Manager_Geral.gd<>res://Assets/Sprites_UI/Borda_das_Barras.png<>res://Assets/Sprites_UI/inventario.png<>res://Assets/Sprites_UI/Barra.png<>res://Assets/Sprites_Jogador/jogggo_02.png<>res://Assets/Sprites_UI/tickt.png<>res://Assets/Sprites_UI/Kenney Bold.ttf<>res://Assets/Sprites_UI/iniciar_depois.jpg<>res://Assets/Sprites_UI/icone-de-iniciacao_03.png<>res://Scenes/Inventário.tscn<>res://Scenes/MenuEscape.tscn<>res://Assets/audio/bookOpen.wav<>res://Assets/audio/bookClose.wav<>res://Scenes/BotaoAudio.tscn<>res://Assets/audio/PAPEL.wav<>res://Scenes/Name.tscn<>res://Scenes/PopUpFome.tscn<>res://Assets/Sprites_UI/vendedor-de-bilete_03.png<>res://Assets/Sprites_UI/sono_06.png<>res://Assets/Sprites_UI/fome_03.png<>res://Assets/Sprites_UI/Moldura_03.png
+Creditos.gd::GDScript::-1::1706669385::0::1::::<>Control<>::
+Creditos.tscn::PackedScene::-1::1706669385::0::1::::<><>::res://Assets/Sprites_UI/Kenney Bold.ttf<>res://Assets/Sprites_UI/Crebito.png<>res://Assets/Sprites_UI/SETA.png<>res://Scenes/Creditos.gd<>res://Scenes/BotaoAudio.tscn
+How to Play.gd::GDScript::-1::1706669385::0::1::::<>Control<>::
+How to Play.tscn::PackedScene::-1::1706669385::0::1::::<><>::res://Assets/Sprites_UI/iniciar_depois.jpg<>res://Assets/Sprites_UI/Kenney Bold.ttf<>res://Assets/Sprites_UI/icone-de-iniciacao_03.png<>res://Scenes/How to Play.gd<>res://Scenes/BotaoAudio.tscn
+Inventário.gd::GDScript::-1::1706669385::0::1::::<>Node2D<>::
+Inventário.tscn::PackedScene::-1::1706669385::0::1::::<><>::res://Assets/Sprites_UI/Fundo-inventario_03.png<>res://Assets/Sprites_UI/folha.png<>res://Assets/Sprites_UI/SETA2.png<>res://Assets/Sprites_UI/SETA.png<>res://Assets/Sprites_UI/CPF2_03.png<>res://Assets/Sprites_UI/Kenney Bold.ttf<>res://Assets/Sprites_UI/carteira_de_vacinacao2_03.png<>res://Assets/Sprites_UI/jojo_3_03.png<>res://Scenes/Inventário.gd<>res://Assets/audio/PAPEL.wav<>res://Assets/Sprites_Jogador/RG2_06.png<>res://Assets/Sprites_Jogador/Reserva_natural_2_03.png<>res://Assets/Sprites_UI/RG2_03.png<>res://Assets/Sprites_Jogador/Reserva_natural_2_06.png
+MenuEscape.gd::GDScript::-1::1706669385::0::1::::<>Node2D<>::
+MenuEscape.tscn::PackedScene::-1::1706669385::0::1::::<><>::res://Assets/Sprites_UI/Kenney Bold.ttf<>res://Assets/Sprites_UI/Fundo-inventario_03.png<>res://Assets/Sprites_UI/icone-de-iniciacao_03.png<>res://Scenes/MenuEscape.gd
+MenuPricipal.gd::GDScript::-1::1706669385::0::1::::<>Control<>::
+MenuPricipal.tscn::PackedScene::-1::1706669385::0::1::::<><>::res://Assets/Sprites_UI/iniciar_antes.jpg<>res://Assets/Sprites_UI/icone-de-iniciacao_03.png<>res://Scenes/MenuPricipal.gd<>res://Assets/Sprites_UI/Kenney Bold.ttf<>res://Scenes/BotaoAudio.tscn
+MusiquinhaTutsTuts.tscn::PackedScene::-1::1706669385::0::1::::<><>::res://Scripts/AudioStreamPlayer.gd<>res://Assets/audio/Mela_-_03_-_Horrible (online-audio-converter.com).wav
+Name.tscn::PackedScene::-1::1706669385::0::1::::<><>::res://Assets/Sprites_UI/Kenney Bold.ttf<>res://Assets/Sprites_UI/RG2_03.png<>res://Scripts/LineEdit.gd<>res://Assets/Sprites_UI/icone-de-iniciacao_03.png
+Node.tscn::PackedScene::-1::1706669385::0::1::::<><>::res://Scripts/Node.gd
+PopUpFome.tscn::PackedScene::-1::1706669385::0::1::::<><>::res://Assets/Sprites_UI/Kenney Bold.ttf<>res://Assets/Sprites_UI/Fundo-inventario_03.png<>res://Assets/Sprites_UI/icone-de-iniciacao_03.png
+Splash.gd::GDScript::-1::1706669385::0::1::::<>Control<>::
+Splash.tscn::PackedScene::-1::1706669385::0::1::::<><>::res://Assets/Sprites_Jogador/Design_sem_nome.ogv<>res://Scenes/Splash.gd
+Teste.tscn::PackedScene::-1::1706669385::0::1::::<><>::res://Assets/Sprites_Jogador/pessoa.png
+::res://Scripts/::1706669370
+AudioStreamPlayer.gd::GDScript::-1::1706669385::0::1::::<>AudioStreamPlayer<>::
+BarraDeFome.gd::GDScript::-1::1706669385::0::1::::<>TextureProgressBar<>::
+LineEdit.gd::GDScript::-1::1706669385::0::1::::<>LineEdit<>::
+Manager_Geral.gd::GDScript::-1::1706669385::0::1::::<>Control<>::
+Node.gd::GDScript::-1::1706669385::0::1::::<>Node<>::
+StoryEvents.gd::GDScript::-1::1706669385::0::1::::<>Node<>::

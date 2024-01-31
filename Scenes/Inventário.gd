@@ -1,32 +1,20 @@
 extends Node2D
-onready var CPF = $CPF
-onready var CarteiraVac = $CarteiraVac
-onready var CertNasc = $CertNasc
-onready var RGFrent = $RGFrente
-onready var RGVerso = $RGVerso
-onready var ReserFren = $ReserFren
-onready var ReserVer = $ReserVer
+@onready var CPF = $CPF
+@onready var CarteiraVac = $CarteiraVac
+@onready var CertNasc = $CertNasc
+@onready var RGFrent = $RGFrente
+@onready var RGVerso = $RGVerso
+@onready var ReserFren = $ReserFren
+@onready var ReserVer = $ReserVer
 
-onready var documento_array = [CPF, CarteiraVac, CertNasc, RGFrent, RGVerso, ReserFren, ReserVer]
+@onready var documento_array = [CPF, CarteiraVac, CertNasc, RGFrent, RGVerso, ReserFren, ReserVer]
 var cycle = 0
-
-
-func _ready():
-	print(documento_array)
-	print(documento_array[0])
-	pass
-	
-func _process(delta):
-	pass
-
 
 func _on_EsquerdaSeta_pressed():
 	if cycle > 0:
 		cycle -= 1
 		set_documento_visible()
 		$Folheando.play()
-	pass
-
 
 func _on_DireitaSeta_pressed():
 	if cycle < 6:

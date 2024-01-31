@@ -1,14 +1,14 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=28 format=2]
 
-[ext_resource path="res://Manager_Geral.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Sprites_UI/Borda_das_Barras.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Sprites_UI/inventario.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Sprites_UI/Barra.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Sprites_Jogador/jogggo_02.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Sprites_UI/tickt.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Sprites_UI/Kenney Bold.ttf" type="DynamicFontData" id=7]
-[ext_resource path="res://Assets/Sprites_UI/iniciar_depois.jpg" type="Texture" id=8]
-[ext_resource path="res://Assets/Sprites_UI/icone-de-iniciacao_03.png" type="Texture" id=9]
+[ext_resource path="res://Scripts/Manager_Geral.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Sprites_UI/Borda_das_Barras.png" type="Texture2D" id=2]
+[ext_resource path="res://Assets/Sprites_UI/inventario.png" type="Texture2D" id=3]
+[ext_resource path="res://Assets/Sprites_UI/Barra.png" type="Texture2D" id=4]
+[ext_resource path="res://Assets/Sprites_Jogador/jogggo_02.png" type="Texture2D" id=5]
+[ext_resource path="res://Assets/Sprites_UI/tickt.png" type="Texture2D" id=6]
+[ext_resource path="res://Assets/Sprites_UI/Kenney Bold.ttf" type="FontFile" id=7]
+[ext_resource path="res://Assets/Sprites_UI/iniciar_depois.jpg" type="Texture2D" id=8]
+[ext_resource path="res://Assets/Sprites_UI/icone-de-iniciacao_03.png" type="Texture2D" id=9]
 [ext_resource path="res://Scenes/Inventário.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scenes/MenuEscape.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Assets/audio/bookOpen.wav" type="AudioStream" id=12]
@@ -17,32 +17,39 @@
 [ext_resource path="res://Assets/audio/PAPEL.wav" type="AudioStream" id=15]
 [ext_resource path="res://Scenes/Name.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Scenes/PopUpFome.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Assets/Sprites_UI/vendedor-de-bilete_03.png" type="Texture2D" id=18]
+[ext_resource path="res://Assets/Sprites_UI/sono_06.png" type="Texture2D" id=19]
+[ext_resource path="res://Assets/Sprites_UI/fome_03.png" type="Texture2D" id=20]
+[ext_resource path="res://Assets/Sprites_UI/Moldura_03.png" type="Texture2D" id=21]
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="FontFile" id=1]
 resource_local_to_scene = true
 size = 42
 use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 7 )
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="FontFile" id=2]
 size = 25
 font_data = ExtResource( 7 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="FontFile" id=3]
 use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 7 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="FontFile" id=4]
 size = 35
 use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 7 )
 
-[sub_resource type="DynamicFont" id=4]
-use_mipmaps = true
-use_filter = true
+[sub_resource type="FontFile" id=5]
+size = 25
+font_data = ExtResource( 7 )
+
+[sub_resource type="FontFile" id=6]
+size = 32
 font_data = ExtResource( 7 )
 
 [node name="Interface" type="Control"]
@@ -54,25 +61,34 @@ __meta__ = {
 }
 
 [node name="Fundo" type="TextureRect" parent="."]
-margin_right = 1920.0
-margin_bottom = 1080.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 texture = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Fundo2" type="TextureRect" parent="Fundo"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 18 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="PromptInicia" parent="." instance=ExtResource( 16 )]
-margin_left = 224.0
-margin_right = 224.0
+offset_left = 224.0
+offset_right = 224.0
 
 [node name="Pergunta" parent="PromptInicia" index="2"]
-custom_fonts/font = SubResource( 5 )
+theme_override_fonts/font = SubResource( 1 )
 
 [node name="PanelDialogo" type="Panel" parent="."]
 visible = false
-anchor_top = 0.735185
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 794.0
 __meta__ = {
 "_edit_use_anchors_": true
 }
@@ -80,21 +96,21 @@ __meta__ = {
 [node name="DialogoText" type="Label" parent="PanelDialogo"]
 anchor_right = 1.0
 anchor_bottom = 0.996503
-custom_fonts/font = SubResource( 1 )
+theme_override_fonts/font = SubResource( 2 )
 text = "Did you ever hear the tragedy of Darth Plagueis The Wise? I thoh eventually, of course, he did. U himself."
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="BarraDeFome" type="TextureProgress" parent="."]
+[node name="BarraDeFome" type="TextureProgressBar" parent="."]
 visible = false
-anchor_left = -0.0859375
-anchor_top = 0.533333
-anchor_right = 0.195312
-anchor_bottom = 0.813333
-margin_top = -120.0
-margin_bottom = -120.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -165.0
+offset_top = 456.0
+offset_right = -1545.0
+offset_bottom = -321.6
 value = 50.0
 texture_under = ExtResource( 2 )
 texture_progress = ExtResource( 4 )
@@ -105,14 +121,24 @@ __meta__ = {
 "_editor_description_": ""
 }
 
-[node name="BarraDeMoral" type="TextureProgress" parent="."]
+[node name="TextRecFome" type="TextureRect" parent="BarraDeFome"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 239.0
+offset_top = 264.0
+offset_right = -239.0
+offset_bottom = 17.6
+texture = ExtResource( 20 )
+expand = true
+
+[node name="BarraDeMoral" type="TextureProgressBar" parent="."]
 visible = false
-anchor_left = -0.03125
-anchor_top = 0.533333
-anchor_right = 0.265625
-anchor_bottom = 0.813333
-margin_top = -120.0
-margin_bottom = -120.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -60.0
+offset_top = 456.0
+offset_right = -1410.0
+offset_bottom = -321.6
 value = 20.0
 texture_under = ExtResource( 2 )
 texture_progress = ExtResource( 4 )
@@ -123,14 +149,24 @@ __meta__ = {
 "_editor_description_": ""
 }
 
+[node name="TextureRectMoral" type="TextureRect" parent="BarraDeMoral"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 260.0
+offset_top = 264.0
+offset_right = -270.0
+offset_bottom = 2.59998
+texture = ExtResource( 19 )
+expand = true
+
 [node name="InventarioBotao" type="TextureButton" parent="."]
 visible = false
-anchor_left = 0.875
-anchor_top = 0.546667
-anchor_right = 0.96875
-anchor_bottom = 0.613334
-margin_top = -116.991
-margin_bottom = -116.991
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1680.0
+offset_top = 473.409
+offset_right = -60.0
+offset_bottom = -534.59
 texture_normal = ExtResource( 3 )
 expand = true
 __meta__ = {
@@ -140,25 +176,14 @@ __meta__ = {
 [node name="Folhado" type="AudioStreamPlayer" parent="InventarioBotao"]
 stream = ExtResource( 15 )
 
-[node name="BotaoReset" type="Button" parent="."]
-visible = false
-anchor_left = 0.0859375
-anchor_top = 0.146667
-anchor_right = 0.195312
-anchor_bottom = 0.266667
-margin_bottom = -1.52588e-05
-__meta__ = {
-"_edit_use_anchors_": true
-}
-
 [node name="NumeroFila" type="TextureButton" parent="."]
 visible = false
-anchor_left = 0.9375
-anchor_top = 0.56
-anchor_right = 0.994141
-anchor_bottom = 0.613333
-margin_top = -120.0
-margin_bottom = -120.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1800.0
+offset_top = 484.8
+offset_right = -11.2493
+offset_bottom = -537.6
 texture_normal = ExtResource( 6 )
 expand = true
 __meta__ = {
@@ -170,10 +195,10 @@ anchor_left = 0.275862
 anchor_top = 0.25
 anchor_right = 0.965517
 anchor_bottom = 0.6875
-margin_left = -8.0
-margin_right = -7.99999
-custom_fonts/font = SubResource( 2 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
+offset_left = -8.0
+offset_right = -7.99999
+theme_override_fonts/font = SubResource( 3 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
 text = "69"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -181,26 +206,43 @@ __meta__ = {
 
 [node name="Jogador" type="TextureRect" parent="."]
 visible = false
-anchor_left = 0.893583
-anchor_top = 0.525926
-anchor_right = 1.05225
-anchor_bottom = 0.845926
-margin_top = 3.05176e-05
-margin_right = 647.36
-margin_bottom = 734.4
-rect_scale = Vector2( 0.199998, 0.199998 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1715.68
+offset_top = 568.0
+offset_right = 747.68
+offset_bottom = 568.0
+scale = Vector2( 0.199998, 0.199998 )
 texture = ExtResource( 5 )
 expand = true
 __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="TextureRect2" type="TextureRect" parent="Jogador"]
+show_behind_parent = true
+light_mask = -2147483647
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -114.729
+offset_top = -4.0
+offset_right = 105.271
+offset_bottom = 41.0
+texture = ExtResource( 21 )
+expand = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
 [node name="BotaoInicio" type="TextureButton" parent="."]
 visible = false
-anchor_left = 0.71875
-anchor_top = 0.874074
-anchor_right = 0.995833
-anchor_bottom = 0.991667
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1380.0
+offset_top = 944.0
+offset_right = -8.00073
+offset_bottom = -8.99963
 texture_normal = ExtResource( 9 )
 __meta__ = {
 "_edit_use_anchors_": true
@@ -211,8 +253,8 @@ anchor_left = 0.300752
 anchor_top = 0.251969
 anchor_right = 0.721804
 anchor_bottom = 0.755906
-margin_left = 1.52588e-05
-custom_fonts/font = SubResource( 3 )
+offset_left = 1.52588e-05
+theme_override_fonts/font = SubResource( 4 )
 text = "Start!"
 align = 1
 valign = 1
@@ -224,12 +266,47 @@ __meta__ = {
 
 [node name="Prompt" type="LineEdit" parent="."]
 visible = false
-margin_left = 320.0
-margin_top = 640.0
-margin_right = 960.0
-margin_bottom = 712.0
-custom_fonts/font = SubResource( 4 )
-text = "sdfsdfsdfsdfsdfsdf"
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 320.0
+offset_top = 640.0
+offset_right = -960.0
+offset_bottom = -368.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Prompt"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -256.0
+offset_right = 372.0
+offset_bottom = -37.0
+scale = Vector2( 0.632707, 0.876612 )
+theme_override_fonts/font = SubResource( 5 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Your name, please, don't forget propper casing, dear."
+valign = 2
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer2" type="Timer" parent="Prompt"]
+wait_time = 60.0
+one_shot = true
+
+[node name="Label2" type="Label" parent="Prompt"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 528.0
+offset_top = -592.0
+offset_bottom = -600.0
+theme_override_fonts/font = SubResource( 6 )
+theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+text = "69.420"
+autowrap = true
+clip_text = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -253,11 +330,22 @@ stream = ExtResource( 13 )
 stream = ExtResource( 12 )
 
 [node name="BotaoAudio" parent="MenuEscape" instance=ExtResource( 14 )]
-[connection signal="text_entered" from="PromptInicia/LineEdit" to="." method="_on_LineEdit_text_entered"]
+
+[node name="Button" type="Button" parent="."]
+visible = false
+offset_left = 64.0
+offset_top = 48.0
+offset_right = 378.0
+offset_bottom = 220.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="text_submitted" from="PromptInicia/LineEdit" to="." method="_on_LineEdit_text_entered"]
 [connection signal="pressed" from="InventarioBotao" to="." method="_on_InventarioBotao_pressed"]
-[connection signal="pressed" from="BotaoReset" to="." method="_on_BotaoReset_pressed"]
 [connection signal="pressed" from="BotaoInicio" to="." method="_on_BotaoInicio_pressed"]
+[connection signal="text_submitted" from="Prompt" to="." method="_on_Prompt_text_entered"]
 [connection signal="pressed" from="PopUpFome/TextureRect/TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 
 [editable path="PromptInicia"]
 

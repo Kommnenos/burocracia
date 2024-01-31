@@ -1,0 +1,13 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOGGVorbis"
+valid=false
+
+[deps]
+
+source_file="res://Assets/Sprites_UI/Design_sem_nome.ogg"
+[params]
+
+loop=true
+loop_offset=0

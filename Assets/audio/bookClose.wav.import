@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/bookClose.wav-50e81a33d61ec32b4ab35b20cef8c2a5.sample"
+type="AudioStreamWAV"
+uid="uid://l67ida1vpumy"
+path="res://.godot/imported/bookClose.wav-50e81a33d61ec32b4ab35b20cef8c2a5.sample"
 
 [deps]
 
 source_file="res://Assets/audio/bookClose.wav"
-dest_files=[ "res://.import/bookClose.wav-50e81a33d61ec32b4ab35b20cef8c2a5.sample" ]
+dest_files=["res://.godot/imported/bookClose.wav-50e81a33d61ec32b4ab35b20cef8c2a5.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

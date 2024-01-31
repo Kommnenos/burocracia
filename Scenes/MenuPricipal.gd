@@ -7,17 +7,17 @@ func _ready():
 
 func _on_Play_pressed():
 	$Play/BotaoAudio.play()
-	get_tree().change_scene("res://Scenes/CenaInicial.tscn")
+	get_tree().change_scene_to_file("res://Scenes/CenaInicial.tscn")
 
 
 func _on_Play2_pressed():
 	$Play2/BotaoAudio.play()
-	get_tree().change_scene("res://Scenes/How to Play.tscn")
+	get_tree().change_scene_to_file("res://Scenes/How to Play.tscn")
 
 
 func _on_Play3_pressed():
 	$Play3/BotaoAudio.play()
-	get_tree().change_scene("res://Scenes/Creditos.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Creditos.tscn")
 
 func _on_Play4_pressed():
 	$Play4/BotaoAudio.play()

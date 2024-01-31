@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/Mela_-_03_-_Horrible (online-audio-converter.com).wav-e7ebe190ae750deb0bfaaa05e7a65d6c.sample"
+type="AudioStreamWAV"
+uid="uid://dglqnpooteos8"
+path="res://.godot/imported/Mela_-_03_-_Horrible (online-audio-converter.com).wav-e7ebe190ae750deb0bfaaa05e7a65d6c.sample"
 
 [deps]
 
 source_file="res://Assets/audio/Mela_-_03_-_Horrible (online-audio-converter.com).wav"
-dest_files=[ "res://.import/Mela_-_03_-_Horrible (online-audio-converter.com).wav-e7ebe190ae750deb0bfaaa05e7a65d6c.sample" ]
+dest_files=["res://.godot/imported/Mela_-_03_-_Horrible (online-audio-converter.com).wav-e7ebe190ae750deb0bfaaa05e7a65d6c.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=true
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0
